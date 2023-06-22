@@ -1,4 +1,4 @@
-<h2>Тестовое задание от Digital Partners Global<h2>
+<h2>Тестовое задание от Digital Partners Global</h2>
 
 <p>Создание Contribution Graph компонента</p>
 
