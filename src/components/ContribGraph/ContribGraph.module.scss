@@ -1,0 +1,97 @@
+.main{
+  width: 904px;
+}
+
+.bottom{
+  width: 100%;
+  display: flex;
+}
+
+.days{
+  margin-right: 5px;
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.months{
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  padding-left: 30px;
+  margin-bottom: 5px;
+}
+
+.items {
+  height: 117px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2px;
+  min-width: 0;
+  width: 100%;
+}
+
+.item {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.activeItem{
+  outline: 1px black solid;
+}
+
+.info {
+  border-radius: 3px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 15px;
+  width: 145px;
+  height: 42px;
+  background: #000;
+  text-align: center;
+  p {
+    &:nth-child(1) {
+      color: white;
+    }
+    &:nth-child(2) {
+      font-size: 10px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -18px;
+    content: "";
+    border: 8px solid transparent; 
+    border-top: 10px solid rgb(0, 0, 0);
+  }
+}
+
+.example{
+  display: flex;
+  margin-top: 20px;
+  p{
+    margin: 0 5px;
+  }
+}
+
+.loading{
+  height: 100%;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  p{
+    color: red
+  }
+
+}
