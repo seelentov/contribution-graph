@@ -14,7 +14,7 @@ export const getContribData = async (): Promise<IGetContribData> => {
   const startDate = new Date(currentDate);
   startDate.setDate(startDate.getDate() - 357);
 
-  while (startDate.getDay() !== 0) {
+  while (startDate.getDay() !== 1) {
     startDate.setDate(startDate.getDate() - 1);
   }
 
