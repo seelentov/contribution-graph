@@ -4,6 +4,7 @@ import { getContribData } from '../../core/api/api';
 import { ContribData } from '../../core/types/contribution';
 import styles from './ContribGraph.module.scss';
 import { ContribGraphItem } from './ContribGraphItem';
+
 export interface IContribGraphProps {
 
 }
@@ -27,6 +28,7 @@ export const ContribGraph: FC<IContribGraphProps> = () => {
         alert(e)
       })
   }, [])
+
 
   return (
     <div className={styles.main}>
